@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            HTML Forms
+        </title>
+    </head>
+
+    <body>
+        <h1>HTML Forms</h1>
+        <form>
+            <label for="username">Username: </label> 
+            <input type="text" id="username" name="user_name" required>
+            <br> <br>
+            <label for="emaill">Email: </label>
+            <input type="email" id="emaill" name="email_id" required>
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="passwd" placeholder="min 8 characters" pattern=".{8,}" required> 
+            <br><br>
+            
+            <p>Gender: </p>
+            <input type="radio" name="Gender" value="Male" id="op1" required>
+            <label for="op1">Male</label>
+            
+
+            <input type="radio" name="Gender" value="Female" id="op2" required>
+            <label for="op2">Female</label>
+            
+            <input type="radio" name="Gender" value="null" id="op3" required>
+            <label for="op3">Rather not say</label>
+            <br><br>
+
+            <label for="city">City: </label>
+            <select name="city" id="city" required>
+                <option value="1">Bangalore</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Delhi</option>
+                <option value="4">Others</option>
+            </select>
+            <br><br>
+            <label for="address">Address: </label>
+            <br>
+            <textarea name="address" id="" cols="30" rows="10" placeholder="" ></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        
+    </body>
+
+</html>
